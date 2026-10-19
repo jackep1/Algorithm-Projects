@@ -1,0 +1,34 @@
+Once upon a time, in a land far away, there lived a young coder who loved solving puzzles. 
+The coder, named Alice, found joy in learning about algorithms and solving complex problems 
+with creative solutions. Among the many challenges Alice faced, one of her favorites was 
+compression algorithms, especially Huffman coding.
+
+With Huffman coding, Alice could compress large amounts of data into smaller bits, saving 
+space and making data transmission more efficient. She often tested her skills on various 
+text samples, and this is one of them. Enjoy decoding this short story!
+
+
+        print(f"bit: {bit}, byte_offset: {byte_offset}, index: {index}")
+
+        if bit == 1:
+            char = chr(data[index])
+            index += 1
+            print(f"Leaf node with character: {char}")
+            return Node(freq=0, char=char)
+        else:
+            left = node_from_binary()
+            right = node_from_binary()
+            print(f"Internal node with left and right children")
+            return Node(freq=0, left=left, right=right)
+
+        # node_type = data[index]
+        # index += 1
+        #
+        # if node_type == 1:  # Leaf node
+        #     char = chr(data[index])  # Convert byte back to character
+        #     index += 1
+        #     return Node(freq=0, char=char)  # Create a leaf node with this character
+        # else:  # Internal node
+        #     left = node_from_binary()
+        #     right = node_from_binary()
+        #     return Node(freq=0, left=left, right=right)  # Create an internal node
